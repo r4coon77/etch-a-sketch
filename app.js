@@ -22,9 +22,9 @@ function createGrid() {
 createGrid()
 
 
-let divClick = document.querySelectorAll('.divItem');
+let divItem = document.querySelectorAll('.divItem');
 
-divClick.forEach(function(i) {
+divItem.forEach(function(i) {
     i.addEventListener('mouseover', function(e) {
         console.log('Button Clicked or Mouseover');
         e.stopPropagation()
