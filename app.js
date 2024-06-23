@@ -32,6 +32,11 @@ divClick.forEach(function(i) {
     });
 });
 
+function changeGridSize() {
+    console.log("Hello, you clicked change gride size wahoo!")
+}
+
+changeGridSize()
 
 
 

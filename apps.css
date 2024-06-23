@@ -1,5 +1,5 @@
 h1 {
-    color:aquamarine;
+    color:black;
     text-align: center;
 }
 
@@ -9,6 +9,11 @@ h1 {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 50px;
+}
+
+#changeGridSize {
+    display: flex;
+    justify-content: center;
 }
 
 .divRow {
