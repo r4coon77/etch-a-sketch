@@ -50,10 +50,18 @@ function resetGrid() {
 }
 
 function changeGridSize() {
-   resetGrid();
-   gridSize = prompt("Please Enter Gride Size  X By X", "0");
+   gridSize = prompt("Please Enter Gride A Size Between 4 By 24", "16");
+   if(gridSize >= 4 && gridSize <= 24) {
+    resetGrid();
    createGrid(gridSize);
    console.log(gridSize)
+   } else if (gridSize < 4 || gridSize > 24){
+    gridSize = alert("Wrong Size: Please Enter A Grid Size Between 4 By 24");
+    changeGridSize()
+   } else if (isNaN(gridSize) === true) {
+    gridSize = alert("Wrong Input: Please Enter A Number");
+    changeGridSize()
+   }
 }
 
 
